@@ -4,6 +4,8 @@
 
 
 
+
+
 real = float(input("Quantos reais você tem na carteira?: R$ "))
 
 dolar = real/4.94

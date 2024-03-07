@@ -5,6 +5,8 @@
 
 
 
+
+
 numero = int(input("Digite um número para calcular sua tabuada: "))
 
 print(f'''{numero} x 1 = {numero*1}\n
