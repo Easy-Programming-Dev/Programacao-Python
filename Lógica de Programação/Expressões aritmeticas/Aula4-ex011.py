@@ -16,4 +16,4 @@ valor = dias*60 + km*0.15
 
 print("O Valor total refente ao aluguel do veiculo é de R$ {:.2f}".format(valor))
 
-print()
+
