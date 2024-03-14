@@ -1,26 +1,35 @@
-'''3. Faça um programa que leia 4 notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: 
-"Aprovado", se a média for maior ou igual a seis; ”Reprovado", se a média for menor que quatro; 
-“Recuperação”, se estiver entre quatro e seis; "Aprovado com Distinção", se a média for igual ou maior que nove. 
+'''3. Faça um script que leia as horas e os minutos e imprima a mensagem “Bom dia”, “Boa tarde” ou “Boa noite”. 
 '''
 
 
+horas = int(input("Digite as horas: "))
+minutos = int(input("Digite os minutos: "))
 
 
-nota1 = float(input("Digite a primeira nota: "))
-nota2 = float(input("Digite a segunda nota: "))
-nota3 = float(input("Digite a terceira nota: "))
-nota4 = float(input("Digite a quarta nota: "))
 
-media = (nota1+nota2+nota3+nota4)/4
+#hora_texto = [str(horas),str(minutos)]
 
-if media >= 6 and media< 9: 
-    print("Aluno aprovado!")
 
-elif media <= 4:
-    print("Aluno reprovado!")
+#horario = ':'.join(hora_texto)
 
-elif media > 4 and media <6: 
-    print("Aluno de recuperação")
+if horas >= 6 and horas <= 11:
+    print("Turno Matutino")
+
+elif horas >=12 and horas <= 18:
+    print("Turno Vespertino")
+
+elif horas > 18 and horas < 6:
+    print("Turno Noturno")
+
+
+'''if horario >= '0:00' and horario <= '11:59':    
+    print("Bom dia!")
+
+elif horario >='12:00' and horario <= '18:59':
+    print("Boa tarde")
+
+elif horario >='19:00' and horario <= '23:59':
+    print("Boa noite")
 
 else:
-    print("Aluno aprovado com distinção")
+    print("Horario inválido!")'''
