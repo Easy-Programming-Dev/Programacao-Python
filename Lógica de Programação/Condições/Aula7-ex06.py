@@ -10,7 +10,7 @@ print("Operações: \n 1 - Adição \n 2 - Subtração \n 3 - Divisão \n 4 - Mu
 
 operacao = int(input("Digite um numero referente à operação desejada: "))
 
-if operacao == 1:
+if operacao == 1:       # ADIÇÃO
     resultado = num1+num2
     if resultado % 2 == 0 and resultado > 0:
         print(f"O resultado {resultado:.2f} é um numero par e positivo.")
@@ -21,23 +21,46 @@ if operacao == 1:
     elif resultado % 2 != 0 and resultado > 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
 
-    else:
+    elif resultado % 2 != 0 and resultado < 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
 
-elif operacao == 2:    
-        resultado = num1-num2
-        if resultado % 2 == 0 and resultado > 0:
-            print(f"O resultado {resultado:.2f} é um numero par e positivo.")
+    else:
+        print(f"O resultado {resultado:.2f} é um numero par e nulo")
 
-        elif resultado % 2 == 0 and resultado < 0:
-            print(f"O resultado {resultado:.2f} é um numero par e negativo.")
-        
-        elif resultado % 2 != 0 and resultado > 0:
-            print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
+elif operacao == 2:            #SUBTRAÇÃO
+        if num1 < 0 or num2 < 0:
+            resultado = num1+num2
+            if resultado % 2 == 0 and resultado > 0:
+                print(f"O resultado {resultado:.2f} é um numero par e positivo.")
+
+            elif resultado % 2 == 0 and resultado < 0:
+                print(f"O resultado {resultado:.2f} é um numero par e negativo.")
+            
+            elif resultado % 2 != 0 and resultado > 0:
+                print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
+
+            elif resultado % 2 != 0 and resultado < 0:
+                print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
+
+            else:
+                print(f"O resultado {resultado:.2f} é um numero par e nulo")
 
         else:
-            print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
+            resultado = num1-num2
+            if resultado % 2 == 0 and resultado > 0:
+                print(f"O resultado {resultado:.2f} é um numero par e positivo.")
 
+            elif resultado % 2 == 0 and resultado < 0:
+                print(f"O resultado {resultado:.2f} é um numero par e negativo.")
+            
+            elif resultado % 2 != 0 and resultado > 0:
+                print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
+
+            elif resultado % 2 != 0 and resultado < 0:
+                print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
+
+            else:
+                print(f"O resultado {resultado:.2f} é um numero par e nulo")
 
 elif operacao == 3:
     resultado = num1/num2
@@ -50,8 +73,11 @@ elif operacao == 3:
     elif resultado % 2 != 0 and resultado > 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
 
-    else:
+    elif resultado % 2 != 0 and resultado < 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
+
+    else:
+        print(f"O resultado {resultado:.2f} é um numero par e nulo")
 
 elif operacao == 4:
     resultado = num1*num2
@@ -64,9 +90,13 @@ elif operacao == 4:
     elif resultado % 2 != 0 and resultado > 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e positivo")
 
-    else:
+    elif resultado % 2 != 0 and resultado < 0:
         print(f"O resultado {resultado:.2f} é um numero ímpar e negativo")
+
+    else:
+        print(f"O resultado {resultado:.2f} é um numero par e nulo")
+        
 else:
-    pass    
+    print("Número de operação inválido! Tente novamente.")    
 
 
