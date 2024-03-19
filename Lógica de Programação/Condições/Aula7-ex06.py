@@ -95,7 +95,6 @@ elif operacao == 4:
 
     else:
         print(f"O resultado {resultado:.2f} é um numero par e nulo")
-        
 else:
     print("Número de operação inválido! Tente novamente.")    
 
