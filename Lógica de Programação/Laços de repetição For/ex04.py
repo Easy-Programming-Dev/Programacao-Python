@@ -1,4 +1,5 @@
-'''4. Faça um programa em Python que leia um valor inteiro e mostre a tabuada de 1 a 10 do valor lido.'''
+'''4. Faça um programa em Python que leia um valor inteiro e mostre a 
+tabuada de 1 a 10 do valor lido.'''
 
 
 num = int(input("digite um numero: "))
