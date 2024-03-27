@@ -1,4 +1,9 @@
-'''3.  Criar um programa para calcular a média de um conjunto de 10 valores inteiros fornecidos em uma unidade de entrada qualquer.'''
+'''3.  Criar um programa para calcular a média de um conjunto de 10
+ valores inteiros fornecidos em uma unidade de entrada qualquer.'''
+
+
+
+
 
 
 conjunto = 0

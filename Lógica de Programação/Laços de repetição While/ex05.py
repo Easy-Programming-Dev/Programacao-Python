@@ -3,6 +3,9 @@ Calcule a quantidade de números pares e ímpares, a média de valores pares e a
 números lidos. O número que encerrará a leitura será zero.'''
 
 
+
+
+
 par = 0
 impar = 0
 media_par = 0
@@ -14,6 +17,7 @@ cont_par=0
 while True:   
     
     num = int(input("Digite um número positivo: "))
+    
     if num != 0:
 
         

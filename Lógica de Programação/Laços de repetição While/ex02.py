@@ -1,4 +1,10 @@
-'''2.  Implementar um programa para somar valores até o usuário digitar o valor 0.'''
+'''2.  Implementar um programa para somar valores até o usuário digitar o 
+valor 0.'''
+
+
+
+
+
 
 soma=0
 num = None
